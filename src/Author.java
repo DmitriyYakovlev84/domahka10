@@ -9,7 +9,7 @@ public class Author {
         return  author;
     }
 
-    public void setAuthor(String author) {
+    public void setAuthor (String author) {
         this.author = author;
     }
 
