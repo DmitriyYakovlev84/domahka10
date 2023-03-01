@@ -6,13 +6,12 @@ public class Author {
     }
 
     public String getName() {
-        return  author;
+        return author;
     }
 
-    public void setAuthor (String author) {
+    public void setAuthor(String author) {
         this.author = author;
     }
-
 
 
 }

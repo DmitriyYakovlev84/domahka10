@@ -8,7 +8,7 @@ public class Book {
         this.name = name;
         this.title = title;
         this.year = year;
-        this.author =  author;
+        this.author = author;
     }
 
     public String getName() {

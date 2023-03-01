@@ -29,7 +29,7 @@ public class Main {
         System.out.println(" Название = " + authorNameDostoevsky.getTitle());
         System.out.println("год выпуска = " + authorNameDostoevsky.getYear());
         authorNameDostoevsky.setYear(1867);
-        System.out.println("authorNameDostoevsky.getYear() = "  + authorNameDostoevsky.getYear());
+        System.out.println("authorNameDostoevsky.getYear() = " + authorNameDostoevsky.getYear());
 
 
     }
