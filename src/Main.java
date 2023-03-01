@@ -1,5 +1,3 @@
-import java.nio.charset.StandardCharsets;
-
 public class Main {
     public static void main(String[] args) {
         // Создайте класс Book, который содержит  в себе данные о названии,
@@ -15,17 +13,24 @@ public class Main {
         //Метод main не должен находиться в классах Book и Author.
         //Создайте отдельный класс для запуска приложения и объявите метод main в нем.
         //В том же методе main измените год публикации одной из книг с помощью сеттера.
-        Book authorNameTolstoy = new Book("Л.Н.Толстой" ,"Война и мир",1867);
+
+        Author alexanderPushkin = new Author("Осень");
+        Author alexanderBlok = new Author("Россия");
+        System.out.println("Авторы стихотворений  = " + alexanderPushkin.getName() +
+                " Пушкин и Блок " + alexanderBlok.getName());
+        Book authorNameTolstoy = new Book("Л.Н.Толстой", "Война и мир", 1867);
         System.out.println("Автор = " + authorNameTolstoy.getName());
         System.out.println("Название = " + authorNameTolstoy.getTitle());
         System.out.println("год выпуска = " + authorNameTolstoy.getYear());
         authorNameTolstoy.setYear(1868);
         System.out.println("authorNameTolstoy.getYear() = " + authorNameTolstoy.getYear());
-        Book authorNameDostoevsky =  new Book("Ф.М.Достоевский","Преступление и наказание",1866);
+        Book authorNameDostoevsky = new Book("Ф.М.Достоевский", "Преступление и наказание", 1866);
         System.out.println("Автор = " + authorNameDostoevsky.getName());
-        System.out.println(" Название = " +  authorNameDostoevsky.getTitle());
-        System.out.println("год выпуска = " +  authorNameDostoevsky.getYear());
+        System.out.println(" Название = " + authorNameDostoevsky.getTitle());
+        System.out.println("год выпуска = " + authorNameDostoevsky.getYear());
         authorNameDostoevsky.setYear(1867);
         System.out.println("authorNameDostoevsky.getYear() = " + authorNameDostoevsky.getYear());
-     }
+
+
+    }
 }
