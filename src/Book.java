@@ -1,38 +1,26 @@
-public class Book {
-    private Author author;
-    private String name;
-    private String title;
-    private int year;
+import javax.lang.model.element.Name;
 
-    public Book(String name, String title, int year) {
-        this.name = name;
+public class Book {
+    private String title;
+    private String  author;
+    private int year;
+    public Book(String author, String title, int year) {
+        this.author = author;
         this.title = title;
         this.year = year;
-        this.author = author;
     }
-
-    public String getName() {
-        return this.name;
+    public String  getAuthor() {
+        return author;
     }
-
     public String getTitle() {
-        return this.title;
+        return title;
     }
-
     public int getYear() {
-        return this.year;
+        return year;
     }
 
     public void setYear(int year) {
         this.year = year;
     }
 
-
-    public Author getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(Author author) {
-        this.author = author;
-    }
 }

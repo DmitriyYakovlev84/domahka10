@@ -16,16 +16,16 @@ public class Main {
 
         Author alexanderPushkin = new Author("Осень");
         Author alexanderBlok = new Author("Россия");
-        System.out.println("Авторы стихотворений  = " + alexanderPushkin.getName() +
-                " Пушкин и Блок " + alexanderBlok.getName());
+        System.out.println("Авторы стихотворений  = " + alexanderPushkin.getLastName() +
+                " Пушкин и Блок " + alexanderBlok.getLastName());
         Book authorNameTolstoy = new Book("Л.Н.Толстой", "Война и мир", 1867);
-        System.out.println("Автор = " + authorNameTolstoy.getName());
+        System.out.println("Автор = " + authorNameTolstoy.getAuthor());
         System.out.println("Название = " + authorNameTolstoy.getTitle());
         System.out.println("год выпуска = " + authorNameTolstoy.getYear());
         authorNameTolstoy.setYear(1868);
         System.out.println("authorNameTolstoy.getYear() = " + authorNameTolstoy.getYear());
         Book authorNameDostoevsky = new Book("Ф.М.Достоевский", "Преступление и наказание", 1866);
-        System.out.println("Автор = " + authorNameDostoevsky.getName());
+        System.out.println("Автор = " + authorNameDostoevsky.getAuthor());
         System.out.println(" Название = " + authorNameDostoevsky.getTitle());
         System.out.println("год выпуска = " + authorNameDostoevsky.getYear());
         authorNameDostoevsky.setYear(1867);
