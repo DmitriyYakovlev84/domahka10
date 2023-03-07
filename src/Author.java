@@ -5,7 +5,7 @@ public class Author {
     public Author(String lastName) {
         this.lastName = lastName;
     }
-    public String getLastName() {
+    public String  getLastName() {
         return lastName;
     }
     @Override
